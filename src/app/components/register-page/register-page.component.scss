@@ -1,0 +1,972 @@
+:host,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  flex-shrink: 0;
+  text-decoration: none;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+:host,
+:not(span, a, ul, ol, li, p) {
+  display: flex;
+}
+
+ul,
+ol {
+  text-indent: 0;
+  padding-inline-start: 1.5em;
+}
+
+p:empty::before {
+  content: '';
+  display: inline-block;
+}
+
+img {
+  object-fit: contain;
+}
+
+svg {
+  overflow: visible;
+}
+
+:host {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #fff;
+  overflow: hidden;
+}
+.rectangle1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 594px;
+  height: 1024px;
+  outline: solid 2px #181c14;
+  background-color: #fff;
+  background-image: url('/assets/rectangle1.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.rectangle9 {
+  transform-origin: top left;
+  position: absolute;
+  left: 647px;
+  top: 304px;
+  width: 336px;
+  height: 51px;
+  border-radius: 8.0778px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.signUp {
+  transform-origin: top left;
+  color: #fff;
+  font-size: 16.1556px;
+  font-weight: 600;
+  font-family: Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+    'Liberation Sans', sans-serif;
+  position: absolute;
+  left: 678px;
+  top: 731px;
+  width: 152px;
+  height: min-content;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.signInButton {
+  position: absolute;
+  left: 644px;
+  top: 681px;
+  width: 728px;
+  height: 79px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 208px;
+  border-radius: 10px;
+  background-color: #1877f2;
+  &__signUp2 {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+      'Liberation Sans', sans-serif;
+    width: min-content;
+    height: min-content;
+    text-align: center;
+    align-items: center;
+    white-space: nowrap;
+    flex-direction: column;
+  }
+}
+.allDetails {
+  position: absolute;
+  left: 644px;
+  top: 79px;
+  width: 728px;
+  height: 562px;
+  flex-direction: column;
+  align-items: flex-start;
+  &__unlockYourPotentialStartYourJo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 538px;
+    height: min-content;
+    flex-direction: column;
+    &__labelWrapper {
+      font-size: 40px;
+      font-family: Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+        'Liberation Sans', sans-serif;
+      flex-shrink: 1;
+      &__label {
+        color: #181c14;
+        font-size: 40px;
+        font-weight: 600;
+        font-family: Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+          'Liberation Sans', sans-serif;
+      }
+      &__label2 {
+        color: #1877f2;
+        font-size: 40px;
+        font-weight: 600;
+        font-family: Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+          'Liberation Sans', sans-serif;
+      }
+      &__label3 {
+        color: #1877f2;
+        font-size: 40px;
+        font-weight: 600;
+        font-family: Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+          'Liberation Sans', sans-serif;
+      }
+    }
+  }
+  &__termsConditions {
+    position: absolute;
+    left: 0;
+    top: 520px;
+    width: 389px;
+    height: 42px;
+    flex-direction: column;
+    align-items: flex-start;
+    &__iVeReadAndAgreeWithTermsOfServ {
+      position: absolute;
+      left: 40px;
+      top: 0;
+      width: min-content;
+      height: min-content;
+      white-space: nowrap;
+      flex-direction: column;
+      &__labelWrapper2 {
+        font-size: 14px;
+        font-family: Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+          'Liberation Sans', sans-serif;
+        flex-shrink: 1;
+        &__label4 {
+          color: #181c14;
+          font-size: 14px;
+          font-weight: 500;
+          font-family: Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+            'Liberation Sans', sans-serif;
+        }
+        &__label5 {
+          color: #1877f2;
+          font-size: 14px;
+          font-weight: 500;
+          font-family: Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+            'Liberation Sans', sans-serif;
+        }
+        &__label6 {
+          color: #181c14;
+          font-size: 14px;
+          font-weight: 500;
+          font-family: Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+            'Liberation Sans', sans-serif;
+        }
+      }
+      &__textBlock {
+        margin-top: 0;
+        &__labelWrapper3 {
+          font-size: 14px;
+          font-family: Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+            'Liberation Sans', sans-serif;
+          flex-shrink: 1;
+          &__label7 {
+            color: #1877f2;
+            font-size: 14px;
+            font-weight: 500;
+            font-family: Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+              'Liberation Sans', sans-serif;
+          }
+        }
+      }
+    }
+  }
+  &__personalInfo {
+    position: absolute;
+    left: 0;
+    top: 170px;
+    width: 728px;
+    height: 310px;
+    flex-direction: column;
+    align-items: flex-start;
+    &__name {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 349px;
+      height: 48px;
+      flex-direction: column;
+      align-items: flex-start;
+      &__emailDetails {
+        position: absolute;
+        left: 0;
+        top: 8px;
+        width: 349px;
+        height: 40px;
+        overflow: visible;
+        &__icon {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      &__name2 {
+        color: #181c14;
+        font-size: 13px;
+        font-weight: 600;
+        font-family: Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+          'Liberation Sans', sans-serif;
+        position: absolute;
+        left: 6.0172%;
+        right: 82.235%;
+        top: -4.1667%;
+        bottom: 62.5%;
+        width: min-content;
+        height: min-content;
+        white-space: nowrap;
+        flex-direction: column;
+      }
+      &__enterEmail {
+        position: absolute;
+        left: 5.4441%;
+        right: 67.6218%;
+        top: 43.75%;
+        bottom: 25%;
+        justify-content: center;
+        align-items: center;
+        &__iDIKUDAKARTHIK {
+          color: #6f6f6f;
+          font-size: 11px;
+          font-weight: 500;
+          font-family: Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+            'Liberation Sans', sans-serif;
+          position: absolute;
+          left: 2px;
+          top: 0;
+          width: min-content;
+          height: min-content;
+          white-space: nowrap;
+          flex-direction: column;
+        }
+      }
+    }
+    &__name3 {
+      position: absolute;
+      left: 379px;
+      top: 0;
+      width: 349px;
+      height: 48px;
+      flex-direction: column;
+      align-items: flex-start;
+      &__emailDetails2 {
+        position: absolute;
+        left: 0;
+        top: 8px;
+        width: 349px;
+        height: 40px;
+        overflow: visible;
+        &__icon2 {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      &__lastName {
+        color: #181c14;
+        font-size: 13px;
+        font-weight: 600;
+        font-family: Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+          'Liberation Sans', sans-serif;
+        position: absolute;
+        left: 6.0172%;
+        right: 73.9255%;
+        top: -4.1667%;
+        bottom: 62.5%;
+        width: min-content;
+        height: min-content;
+        white-space: nowrap;
+        flex-direction: column;
+      }
+      &__enterEmail2 {
+        position: absolute;
+        left: 5.4441%;
+        right: 69.341%;
+        top: 43.75%;
+        bottom: 25%;
+        justify-content: center;
+        align-items: center;
+        &__pANDU {
+          color: #6f6f6f;
+          font-size: 11px;
+          font-weight: 500;
+          font-family: Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+            'Liberation Sans', sans-serif;
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: min-content;
+          height: min-content;
+          white-space: nowrap;
+          flex-direction: column;
+        }
+      }
+    }
+    &__name4 {
+      position: absolute;
+      left: 0;
+      top: 88px;
+      width: 349px;
+      height: 48px;
+      flex-direction: column;
+      align-items: flex-start;
+      &__emailDetails3 {
+        position: absolute;
+        left: 0;
+        top: 8px;
+        width: 349px;
+        height: 40px;
+        overflow: visible;
+        &__icon3 {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      &__emailId {
+        color: #181c14;
+        font-size: 13px;
+        font-weight: 600;
+        font-family: Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+          'Liberation Sans', sans-serif;
+        position: absolute;
+        left: 6.0172%;
+        right: 78.7966%;
+        top: -4.1667%;
+        bottom: 62.5%;
+        width: min-content;
+        height: min-content;
+        white-space: nowrap;
+        flex-direction: column;
+      }
+      &__enterEmail3 {
+        position: absolute;
+        left: 5.4441%;
+        right: 69.341%;
+        top: 43.75%;
+        bottom: 25%;
+        justify-content: center;
+        align-items: center;
+        &__idikudakarthikGmailCom {
+          color: #6f6f6f;
+          font-size: 11px;
+          font-weight: 500;
+          font-family: Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+            'Liberation Sans', sans-serif;
+          position: absolute;
+          left: 2px;
+          top: 0;
+          width: min-content;
+          height: min-content;
+          white-space: nowrap;
+          flex-direction: column;
+        }
+      }
+    }
+    &__name5 {
+      position: absolute;
+      left: 379px;
+      top: 88px;
+      width: 349px;
+      height: 48px;
+      flex-direction: column;
+      align-items: flex-start;
+      &__emailDetails4 {
+        position: absolute;
+        left: 0;
+        top: 8px;
+        width: 349px;
+        height: 40px;
+        overflow: visible;
+        &__icon4 {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      &__mobileNo {
+        color: #181c14;
+        font-size: 13px;
+        font-weight: 600;
+        font-family: Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+          'Liberation Sans', sans-serif;
+        position: absolute;
+        left: 6.0172%;
+        right: 74.4986%;
+        top: -4.1667%;
+        bottom: 62.5%;
+        width: min-content;
+        height: min-content;
+        white-space: nowrap;
+        flex-direction: column;
+      }
+      &___919494432697 {
+        color: #6f6f6f;
+        font-size: 11px;
+        font-weight: 500;
+        font-family: Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+          'Liberation Sans', sans-serif;
+        position: absolute;
+        left: 56px;
+        top: 21px;
+        width: min-content;
+        height: min-content;
+        white-space: nowrap;
+        flex-direction: column;
+      }
+      &__image1 {
+        position: absolute;
+        left: 21px;
+        top: 19px;
+        width: 20px;
+        height: 20px;
+        background-image: url('/assets/image1.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+    &__password {
+      position: absolute;
+      left: 0;
+      top: 176px;
+      width: 349px;
+      height: 134px;
+      flex-direction: column;
+      align-items: flex-start;
+      &__name6 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 349px;
+        height: 48px;
+        flex-direction: column;
+        align-items: flex-start;
+        &__emailDetails5 {
+          position: absolute;
+          left: 0;
+          top: 8px;
+          width: 349px;
+          height: 40px;
+          overflow: visible;
+          &__icon5 {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        &__password2 {
+          color: #181c14;
+          font-size: 13px;
+          font-weight: 600;
+          font-family: Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+            'Liberation Sans', sans-serif;
+          position: absolute;
+          left: 6.0172%;
+          right: 75.3582%;
+          top: -4.1667%;
+          bottom: 62.5%;
+          width: min-content;
+          height: min-content;
+          white-space: nowrap;
+          flex-direction: column;
+        }
+        &__enterEmail4 {
+          position: absolute;
+          left: 5.4441%;
+          right: 69.341%;
+          top: 43.75%;
+          bottom: 25%;
+          justify-content: center;
+          align-items: center;
+          &___12345678910K {
+            color: #6f6f6f;
+            font-size: 10px;
+            font-weight: 500;
+            font-family: Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+              'Liberation Sans', sans-serif;
+            position: absolute;
+            left: 2px;
+            top: 0;
+            width: min-content;
+            height: min-content;
+            white-space: nowrap;
+            flex-direction: column;
+          }
+        }
+      }
+      &__indicator {
+        position: absolute;
+        left: 0;
+        top: 68px;
+        width: 200px;
+        height: 6px;
+        flex-direction: column;
+        align-items: flex-start;
+        &__rectangle14 {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 65px;
+          height: 6px;
+          border-radius: 10px;
+          background-color: #00b060;
+        }
+        &__rectangle15 {
+          position: absolute;
+          left: 67px;
+          top: 0;
+          width: 65px;
+          height: 6px;
+          border-radius: 10px;
+          background-color: #00b060;
+        }
+        &__rectangle16 {
+          position: absolute;
+          left: 134px;
+          top: 0;
+          width: 65px;
+          height: 6px;
+          border-radius: 10px;
+          background-color: #00b060;
+        }
+      }
+      &__yourPasswordIsVeryStrong {
+        color: #00b060;
+        font-size: 13px;
+        font-weight: 500;
+        font-family: Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+          'Liberation Sans', sans-serif;
+        position: absolute;
+        left: 0;
+        top: 94px;
+        width: 147px;
+        height: min-content;
+        flex-direction: column;
+      }
+    }
+    &__confrimPassword {
+      position: absolute;
+      left: 379px;
+      top: 176px;
+      width: 349px;
+      height: 134px;
+      flex-direction: column;
+      align-items: flex-start;
+      &__name7 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 349px;
+        height: 48px;
+        flex-direction: column;
+        align-items: flex-start;
+        &__emailDetails6 {
+          position: absolute;
+          left: 0;
+          top: 8px;
+          width: 835px;
+          height: 625px;
+          overflow: visible;
+          &__icon6 {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        &__confirmPassword {
+          color: #181c14;
+          font-size: 13px;
+          font-weight: 600;
+          font-family: Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+            'Liberation Sans', sans-serif;
+          position: absolute;
+          left: 6.0172%;
+          right: 58.7393%;
+          top: -4.1667%;
+          bottom: 62.5%;
+          width: min-content;
+          height: min-content;
+          white-space: nowrap;
+          flex-direction: column;
+        }
+        &__enterEmail5 {
+          position: absolute;
+          left: 5.4441%;
+          right: 69.341%;
+          top: 43.75%;
+          bottom: 25%;
+          justify-content: center;
+          align-items: center;
+          &__unnamed {
+            color: #6f6f6f;
+            font-size: 14px;
+            font-weight: 500;
+            font-family: Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+              'Liberation Sans', sans-serif;
+            position: absolute;
+            left: 2px;
+            top: 0;
+            width: min-content;
+            height: min-content;
+            white-space: nowrap;
+            flex-direction: column;
+          }
+        }
+      }
+      &__indicator2 {
+        position: absolute;
+        left: 0;
+        top: 68px;
+        width: 200px;
+        height: 6px;
+        flex-direction: column;
+        align-items: flex-start;
+        &__rectangle142 {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 65px;
+          height: 6px;
+          border-radius: 10px;
+          background-color: #00b060;
+        }
+        &__rectangle152 {
+          position: absolute;
+          left: 67px;
+          top: 0;
+          width: 65px;
+          height: 6px;
+          border-radius: 10px;
+          background-color: #00b060;
+        }
+        &__rectangle162 {
+          position: absolute;
+          left: 134px;
+          top: 0;
+          width: 65px;
+          height: 6px;
+          border-radius: 10px;
+          background-color: #00b060;
+        }
+      }
+      &__yourPasswordIsVeryStrong2 {
+        color: #00b060;
+        font-size: 13px;
+        font-weight: 500;
+        font-family: Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+          'Liberation Sans', sans-serif;
+        position: absolute;
+        left: 0;
+        top: 94px;
+        width: 147px;
+        height: min-content;
+        flex-direction: column;
+      }
+    }
+  }
+}
+.talentvivid1 {
+  position: absolute;
+  left: 1222px;
+  top: 0;
+  width: 150px;
+  height: 155.75px;
+  background-image: url('/assets/talentvivid1.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.loginBar {
+  position: absolute;
+  left: 637px;
+  top: 951px;
+  width: 247px;
+  height: 26px;
+  flex-direction: column;
+  align-items: flex-start;
+  &__alreadyHaveAnAccountSignIn {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: min-content;
+    height: min-content;
+    white-space: nowrap;
+    flex-direction: column;
+    &__labelWrapper4 {
+      font-size: 15px;
+      font-family: Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+        'Liberation Sans', sans-serif;
+      flex-shrink: 1;
+      &__label8 {
+        color: #181c14;
+        font-size: 15px;
+        font-weight: 500;
+        font-family: Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+          'Liberation Sans', sans-serif;
+      }
+      &__label9 {
+        color: #1877f2;
+        font-size: 15px;
+        font-weight: 500;
+        font-family: Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+          'Liberation Sans', sans-serif;
+      }
+    }
+  }
+  &__line4 {
+    position: absolute;
+    left: 203.5px;
+    top: 26px;
+    width: 48.5px;
+    max-width: 100%;
+    height: 0px;
+    max-height: 100%;
+    overflow: visible;
+    &__icon7 {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+.orApps {
+  position: absolute;
+  left: calc(50% - -282px);
+  top: 800px;
+  width: 474px;
+  height: 110px;
+  flex-direction: column;
+  align-items: flex-start;
+  transform: translateX(-50%);
+  &__orBar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 473.9998px;
+    height: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    &__line2 {
+      position: relative;
+      left: 0;
+      top: 9.1718px;
+      width: 167.0006px;
+      max-width: 100%;
+      height: 1.3435px;
+      max-height: 100%;
+    }
+    &__orSignUpWith {
+      color: #6d6d6d;
+      font-size: 13px;
+      font-weight: 500;
+      font-family: Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+        'Liberation Sans', sans-serif;
+      position: absolute;
+      left: 176.9986px;
+      top: 0;
+      width: min-content;
+      height: min-content;
+      white-space: nowrap;
+      flex-direction: column;
+    }
+    &__line3 {
+      position: relative;
+      left: 284.9985px;
+      top: 9.2652px;
+      width: 189.0041px;
+      max-width: 100%;
+      height: 1.5304px;
+      max-height: 100%;
+    }
+  }
+  &___3rdPartyLogin {
+    position: absolute;
+    left: 97px;
+    top: 50px;
+    width: min-content;
+    height: min-content;
+    align-items: center;
+    gap: 50px;
+    &__google {
+      position: relative;
+      width: 60px;
+      height: 60px;
+      flex-direction: column;
+      align-items: flex-start;
+      &__ellipse2 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 60px;
+        height: 60px;
+        overflow: visible;
+        &__icon8 {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      &__googleBar {
+        position: absolute;
+        left: 15px;
+        top: 15px;
+        width: 30px;
+        height: 30px;
+        &__icon9 {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+    &__facebook {
+      position: relative;
+      width: 60px;
+      height: 60px;
+      flex-direction: column;
+      align-items: flex-start;
+      &__ellipse22 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 60px;
+        height: 60px;
+        overflow: visible;
+        &__icon10 {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      &__facebookBar {
+        position: absolute;
+        left: 50%;
+        top: 15px;
+        width: 30px;
+        height: 30px;
+        flex-direction: column;
+        align-items: flex-start;
+        overflow: hidden;
+        transform: translateX(-50%);
+        &__facebookGroup {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          &__icon11 {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+    &__apple {
+      position: relative;
+      width: 60px;
+      height: 60px;
+      flex-direction: column;
+      align-items: flex-start;
+      &__ellipse23 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 60px;
+        height: 60px;
+        overflow: visible;
+        &__icon12 {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      &__appleBar {
+        position: absolute;
+        left: 15px;
+        top: 15px;
+        width: 30px;
+        height: 30px;
+        flex-direction: column;
+        align-items: flex-start;
+        overflow: hidden;
+        &__apple2 {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          &__icon13 {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+}
+.line2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: 0 0;
+  transform: translateY(1.3435px) rotate(-0.1178deg);
+  width: 166.9989px;
+  height: 0;
+  border-bottom: solid 1px #6d6d6d;
+}
+.line3::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: 0 0;
+  transform: translateY(1.5304px) rotate(-0.1608deg);
+  width: 189.002px;
+  height: 0;
+  border-bottom: solid 1px #6d6d6d;
+}
